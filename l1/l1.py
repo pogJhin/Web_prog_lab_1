@@ -39,9 +39,8 @@ def task3(x):
 	if x<0:
 		sign=-1
 		x*=sign
-	for i in range(len(str(x))):
+  for i in range(len(str(x))):
 		l.append(str(x)[i])
-	x=0
 	for i in range(len(l)):
 		x+=int(l[i])*sign*10**i
 	print('outpur',x,'\n')
@@ -62,12 +61,14 @@ def task4(A,n):
 
 a2=task4(4,9)
 
+
 def task5(x):
 	print('Задание 5\ninput',x)
 	for i in range(2,int(x/2)):
 		if x%i == 0:
 			return False
 	return True
+
 
 print('output',task5(997))
 
@@ -92,5 +93,6 @@ def plus(x):
 	return x+1
 
 print('\nЗадание7')
+
 for i in range(20):
 	plus(1)
